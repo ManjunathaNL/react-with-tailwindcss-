@@ -1,15 +1,14 @@
-import { Tabs, Tab } from './components/mainTabs';
-import CompanyDetailsForm from "./components/CompanyDetailsForm"
-
+import { Tabs, Tab } from "./components/mainTabs";
+import CompanyDetailsForm from "./components/CompanyDetailsForm";
 
 const App = () => {
   return (
-    <div className="m-20"  >
+    <div>
       <Tabs>
         <Tab label="Persanal Data">
-          <div className="py-4">
-            <h2 className="text-lg font-medium mb-2">Persanal Data</h2>
-          </div>  
+          <div className="py-4 ">
+            <h2 className="text-lg  font-medium mb-2">Persanal Data</h2>
+          </div>
         </Tab>
         <Tab label="Company Details">
           <CompanyDetailsForm />
@@ -28,7 +27,7 @@ const App = () => {
           <div className="py-4">
             <h2 className="text-lg font-medium mb-2">Bank Details</h2>
           </div>
-        </Tab>  
+        </Tab>
       </Tabs>
     </div>
   );
